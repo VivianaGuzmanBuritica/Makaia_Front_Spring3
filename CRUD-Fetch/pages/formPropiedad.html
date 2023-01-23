@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/addNew.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Formulario Personaje</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="../images/Fill 3.png" alt="logo">
+            <img src="../images/casaRoyal.png" alt="letras">
+        </figure>
+        <h3><a href="../index.html">Regresar a Home</a></h3>
+    </header>
+    <h1 class="title">Agregar nuevo Personajes</h1>
+    
+    <main class="main">    
+        <form class="form">
+            <label for="id">id</label>
+            <input  id="id" type="text" value="" required>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" value = "" required> 
+            <label for="area">Area:</label>
+            <input id="area" type="text" value = "" required>
+            <label for="image">URL imagen</label>
+            <input id='image' type="url">
+            <label for="categoria">Elije una categoria</label>
+            <select id="categoria" required>
+                <option value = "casa">Casa</option>
+                <option value = "apartamento">Apartamento</option>
+                <option value = "lote">Lote</option>
+                <option value = "finca">Finca</option>
+            </select>
+           <button type="submit" class="enviar">Enviar</button>
+    
+
+        
+        
+        
+    </form>
+</main>
+  
+    <script src="../scripts/formPropiedad.js"  type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
